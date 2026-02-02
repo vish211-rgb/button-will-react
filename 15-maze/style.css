@@ -1,0 +1,301 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #000000;
+    --gray-light: #f5f5f5;
+    --gray-mid: #e0e0e0;
+    --gray-dark: #333333;
+    --border-color: #000000;
+    --font-main: 'Inter', sans-serif;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* User said: no scroll bar, no overflow hidden */
+}
+
+.app-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #000;
+}
+
+/* --- Maze Panel (Left) --- */
+.maze-panel {
+    flex: 1;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.maze-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.maze-header p {
+    font-weight: 300;
+    color: var(--gray-dark);
+}
+
+.canvas-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    min-height: 0;
+    /* Important for flex child */
+}
+
+#mazeCanvas {
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid #000;
+    background: #fff;
+    box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.stats-bar {
+    display: flex;
+    gap: 40px;
+    padding: 20px 0;
+    border-top: 1px solid var(--gray-mid);
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat .label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #888;
+}
+
+.stat .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.hint {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.key {
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    color: #000;
+}
+
+/* --- Auth Panel (Right) --- */
+.auth-panel {
+    width: 450px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    justify-content: center;
+    position: relative;
+    border-left: 1px solid #333;
+}
+
+.auth-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lock-state,
+.unlock-state {
+    margin-bottom: 40px;
+}
+
+.unlock-state {
+    display: none;
+}
+
+.lock-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.lock-state p,
+.unlock-state p {
+    font-size: 0.9rem;
+    color: #888;
+    line-height: 1.5;
+}
+
+.auth-form {
+    opacity: 0.2;
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+#loginForm.unlocked .auth-form {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#loginForm.unlocked .lock-state {
+    display: none;
+}
+
+#loginForm.unlocked .unlock-state {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.input-group input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #333;
+    padding: 10px 0;
+    color: #fff;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    outline: none;
+    transition: var(--transition);
+}
+
+.input-group input:focus {
+    border-color: #fff;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 18px;
+    background: #fff;
+    color: #000;
+    border: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: var(--transition);
+}
+
+.auth-btn:hover {
+    background: #ccc;
+    transform: translateY(-2px);
+}
+
+.auth-footer {
+    font-size: 0.6rem;
+    color: #444;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+/* --- Utilities & Animations --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 900px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .app-container {
+        flex-direction: column;
+    }
+
+    .auth-panel {
+        width: 100%;
+        padding: 40px;
+        border-left: none;
+        border-top: 1px solid #333;
+    }
+
+    .maze-panel {
+        padding: 30px;
+        min-height: 600px;
+    }
+
+    .maze-header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.celebration {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff !important;
+    /* Force B&W */
+}

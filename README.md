@@ -134,6 +134,16 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/14-anxiety
 
 ---
 
+**14. maze**
+
+![Preview](./assets/banner/15-maze.png)
+
+**you need to complete the maze challenge to unlock login.**
+
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/15-maze/)
+
+---
+
 # Wants to add your project?
 
 If you have a cool prank or an interesting project that you'd like to share, please feel free to open an issue or submit a pull request. We'll review it and add it to the list!

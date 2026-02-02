@@ -215,6 +215,20 @@
         "code": "https://github.com/iamovi/button-will-react/tree/main/14-anxiety_button",
         "preview": "https://iamovi.github.io/button-will-react/14-anxiety_button/"
       }
+    },
+    {
+      "id": 15,
+      "index": "15",
+      "title": "maze",
+      "description": "you need to complete the maze challenge to unlock login",
+      "media": {
+        "src": "./assets/banner/15-maze.png`",
+        "alt": "maze game login"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/15-maze",
+        "preview": "https://iamovi.github.io/button-will-react/15-maze/"
+      }
     }
   ]
 }

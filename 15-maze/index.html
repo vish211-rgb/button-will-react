@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Portal | Maze Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main class="app-container">
+        <section class="maze-panel">
+            <div class="maze-header">
+                <h1 class="glitch" data-text="SECURITY_CHALLENGE">SECURITY_CHALLENGE</h1>
+                <p>Navigate the pulse to the terminal to unlock access.</p>
+            </div>
+
+            <div class="canvas-wrapper">
+                <canvas id="mazeCanvas"></canvas>
+            </div>
+
+            <div class="stats-bar">
+                <div class="stat">
+                    <span class="label">MOVES</span>
+                    <span class="value" id="moves">0</span>
+                </div>
+                <div class="stat">
+                    <span class="label">TIME</span>
+                    <span class="value" id="timer">00:00</span>
+                </div>
+                <div class="stat">
+                    <span class="label">ATTEMPTS</span>
+                    <span class="value" id="attempts">0</span>
+                </div>
+            </div>
+
+            <div class="hint">
+                <span class="key">↑</span>
+                <span class="key">↓</span>
+                <span class="key">←</span>
+                <span class="key">→</span>
+                <span>TO MANEUVER</span>
+            </div>
+        </section>
+
+        <section class="auth-panel" id="loginForm">
+            <div class="auth-content">
+                <div class="lock-state" id="lockMessage">
+                    <div class="lock-icon">🔒</div>
+                    <h2>ENCRYPTED</h2>
+                    <p>Standard authentication is currently disabled. Complete the bypass sequence on the left.</p>
+                </div>
+
+                <div class="unlock-state" id="successMessage">
+                    <div class="lock-icon">🔓</div>
+                    <h2>DECRYPTED</h2>
+                    <p>Bypass successful. Identity verification required.</p>
+                </div>
+
+                <form id="loginFormElement" class="auth-form">
+                    <div class="input-group">
+                        <label for="username">IDENTIFIER</label>
+                        <input type="text" id="username" placeholder="Enter username..." required autocomplete="off">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">PASSCODE</label>
+                        <input type="password" id="password" placeholder="Enter password..." required>
+                    </div>
+
+                    <button type="submit" class="auth-btn">LOGIN</button>
+                </form>
+            </div>
+
+            <footer class="auth-footer">
+                <p>&copy; 2026 by Ovi ren</p>
+            </footer>
+        </section>
+    </main>
+
+    <div class="celebration" id="celebration"></div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
