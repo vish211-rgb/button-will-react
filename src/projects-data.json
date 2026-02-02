@@ -63,8 +63,6 @@
       "description": "Hover over the button and get showered with love.",
       "contributor": {
         "name": "Tahsin Zidane",
-        "portfolio": "https://tahsinzidane.github.io/",
-        "github": "https://github.com/TahsinZidane",
         "country": "Bangladesh"
       },
       "media": {
@@ -97,8 +95,6 @@
       "description": "An improved version of love showering.",
       "contributor": {
         "name": "Tahsin Zidane",
-        "portfolio": "https://tahsinzidane.github.io/",
-        "github": "https://github.com/TahsinZidane",
         "country": "Bangladesh"
       },
       "media": {
@@ -159,8 +155,6 @@
       "description": "Find your match on Instagram",
       "contributor": {
         "name": "Tahsin Zidane",
-        "portfolio": "https://tahsinzidane.github.io/",
-        "github": "https://github.com/TahsinZidane",
         "country": "Bangladesh"
       },
       "media": {
@@ -179,8 +173,6 @@
       "description": "Find your match on Instagram V2",
       "contributor": {
         "name": "Tahsin Zidane",
-        "portfolio": "https://tahsinzidane.github.io/",
-        "github": "https://github.com/TahsinZidane",
         "country": "Bangladesh"
       },
       "media": {
@@ -239,12 +231,16 @@
       "index": "16",
       "title": "valentines_prank",
       "description": "14th feb prank with your loved one.",
+      "contributor": {
+        "name": "Osoko Odunayo",
+        "country": "Bangladesh"
+      },
       "media": {
         "src": "./assets/banner/16-valentines_prank.gif",
-        "alt": "valentines prank"
+        "alt": "valentines_prank"
       },
       "links": {
-        "code": "https://github.com/iamovi/button-will-react/tree/main/16-valentines_prank",
+        "code": "https://github.com/iamovi/button-will-react/tree/main/16-valentines_prank/",
         "preview": "https://iamovi.github.io/button-will-react/16-valentines_prank/"
       }
     }

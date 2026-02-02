@@ -63,9 +63,8 @@ function renderProjects(projects) {
           
           <div class="contributed-by">
             ${project.contributor ?
-        `Contributed by: ${project.contributor.name} 
-             ${(project.contributor.portfolio || project.contributor.url || project.contributor.github) ? '(' : ''}${project.contributor.portfolio || project.contributor.url ? `<a href="${project.contributor.portfolio || project.contributor.url}" target="_blank">Portfolio</a>` : ''}${(project.contributor.portfolio || project.contributor.url) && project.contributor.github ? ' | ' : ''}${project.contributor.github ? `<a href="${project.contributor.github}" target="_blank">GitHub</a>` : ''}${(project.contributor.portfolio || project.contributor.url || project.contributor.github) ? ')' : ''}` :
-        `Created by: Ovi ren (<a href="https://iamovi.github.io/" target="_blank">Portfolio</a> | <a href="https://github.com/iamovi" target="_blank">GitHub</a>)`}
+        `Contributed by: ${project.contributor.name}` :
+        `Created by: Ovi ren`}
           </div>
 
           <div class="card-links">
