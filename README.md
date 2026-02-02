@@ -144,6 +144,20 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/15-maze/)
 
 ---
 
+**16. valentines_prank**
+
+![Preview](./assets/banner/16-valentines_prank.gif)
+
+**14th feb prank with your loved one.**
+
+***Contributed project by [Osoko Odunayo](https://github.com/tahsinzidane)***
+
+***from Nigeria***
+
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/16-valentines_prank/)
+
+---
+
 # Wants to add your project?
 
 If you have a cool prank or an interesting project that you'd like to share, please feel free to open an issue or submit a pull request. We'll review it and add it to the list!

@@ -265,9 +265,29 @@ header p {
 
 .team-card a {
   color: var(--text-color);
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.team-card a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.team-links {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--card-border);
+}
+
+.team-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .cdn-section h2 {

@@ -5,7 +5,8 @@
             "role": "Author",
             "bio": "Main creator and developer of the button-will-react project.",
             "avatar": "https://avatars.githubusercontent.com/u/137372623?v=4",
-            "url": "https://iamovi.github.io/",
+            "portfolio": "https://iamovi.github.io/",
+            "github": "https://github.com/iamovi",
             "country": "Dhaka, Bangladesh"
         },
         {
@@ -13,8 +14,18 @@
             "role": "Contributor",
             "bio": "Contributed to projects 05, 07, 11 and 12",
             "avatar": "https://ik.imagekit.io/weqpr6tob/MY%20IMGS/me.logo.png",
-            "url": "https://tahsinzidane.github.io/",
+            "portfolio": "https://tahsinzidane.github.io/",
+            "github": "https://github.com/tahsinzidane",
             "country": "Jessore, Bangladesh"
+        },
+        {
+            "name": "Osoko Odunayo",
+            "role": "Contributor",
+            "bio": "Contributed to project 16",
+            "avatar": "/assets/team/osoko.jpg",
+            "portfolio": "",
+            "github": "https://github.com/Torrid015",
+            "country": "Nigeria"
         }
     ]
 }

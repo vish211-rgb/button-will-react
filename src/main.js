@@ -63,8 +63,9 @@ function renderProjects(projects) {
           
           <div class="contributed-by">
             ${project.contributor ?
-        `Contributed by: <a href="${project.contributor.url}" target="_blank">${project.contributor.name}</a>` :
-        `Created by: <a href="https://iamovi.github.io/" target="_blank">Ovi ren</a>`}
+        `Contributed by: ${project.contributor.name} 
+             ${(project.contributor.portfolio || project.contributor.url || project.contributor.github) ? '(' : ''}${project.contributor.portfolio || project.contributor.url ? `<a href="${project.contributor.portfolio || project.contributor.url}" target="_blank">Portfolio</a>` : ''}${(project.contributor.portfolio || project.contributor.url) && project.contributor.github ? ' | ' : ''}${project.contributor.github ? `<a href="${project.contributor.github}" target="_blank">GitHub</a>` : ''}${(project.contributor.portfolio || project.contributor.url || project.contributor.github) ? ')' : ''}` :
+        `Created by: Ovi ren (<a href="https://iamovi.github.io/" target="_blank">Portfolio</a> | <a href="https://github.com/iamovi" target="_blank">GitHub</a>)`}
           </div>
 
           <div class="card-links">
@@ -107,7 +108,10 @@ function renderTeam(team) {
       <h4>${member.name}</h4>
       ${country ? `<p style="font-size: 0.9rem; color: var(--secondary-text); margin-bottom: 0.5rem;"><i class="bi bi-geo-alt"></i> ${country}</p>` : ''}
       <p>${member.bio}</p>
-      <a href="${member.url}" target="_blank">View Portfolio</a>
+      <div class="team-links">
+        ${member.portfolio ? `<a href="${member.portfolio}" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Portfolio</a>` : ''}
+        ${member.github ? `<a href="${member.github}" target="_blank"><i class="bi bi-github"></i> GitHub</a>` : ''}
+      </div>
     `;
     fragment.appendChild(card);
   });
