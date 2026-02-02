@@ -134,7 +134,7 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/14-anxiety
 
 ---
 
-**14. maze**
+**15. maze**
 
 ![Preview](./assets/banner/15-maze.png)
 
