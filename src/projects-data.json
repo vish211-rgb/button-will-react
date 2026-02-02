@@ -233,6 +233,20 @@
         "code": "https://github.com/iamovi/button-will-react/tree/main/15-maze",
         "preview": "https://iamovi.github.io/button-will-react/15-maze/"
       }
+    },
+    {
+      "id": 16,
+      "index": "16",
+      "title": "valentines_prank",
+      "description": "14th feb prank with your loved one.",
+      "media": {
+        "src": "./assets/banner/16-valentines_prank.gif",
+        "alt": "valentines prank"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/16-valentines_prank",
+        "preview": "https://iamovi.github.io/button-will-react/16-valentines_prank/"
+      }
     }
   ]
 }
