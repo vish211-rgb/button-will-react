@@ -150,7 +150,7 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/15-maze/)
 
 **14th feb prank with your loved one.**
 
-***Contributed project by [Osoko Odunayo](https://github.com/tahsinzidane)***
+***Contributed project by [Osoko Odunayo](https://github.com/Torrid015)***
 
 ***from Nigeria***
 
