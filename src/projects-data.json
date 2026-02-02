@@ -222,7 +222,7 @@
       "title": "maze",
       "description": "you need to complete the maze challenge to unlock login",
       "media": {
-        "src": "./assets/banner/15-maze.png`",
+        "src": "./assets/banner/15-maze.png",
         "alt": "maze game login"
       },
       "links": {
