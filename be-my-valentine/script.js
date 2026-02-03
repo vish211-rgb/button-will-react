@@ -48,6 +48,7 @@ yesBtn.addEventListener("click", () => {
     <h1>Yayyyy 🥰💖</h1>
     <p>You are officially my Valentine 😍</p>
   `;
+  document.getElementById('yesNotify').submit();
 });
 
 console.log(texts.length);
